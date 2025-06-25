@@ -73,7 +73,7 @@ const FeedbackForm = ({ isDark }) => {
       <form
         onSubmit={handleSubmit}
         className={`max-w-2xl mx-auto p-8 rounded-xl shadow-lg border border-yellow-100
-          ${isDark ? 'bg-gray-800 text-white ' : 'bg-white text-white'}`
+          ${isDark ? 'bg-[#111111] text-white ' : 'bg-white text-white'}`
         }
         style={{ boxShadow: '0 4px 32px 0 rgba(255, 193, 7, 0.10)' }}
         
@@ -87,7 +87,7 @@ const FeedbackForm = ({ isDark }) => {
             type="text"
             placeholder="Name"
             className={`w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 mb-3
-              ${isDark ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}
+              ${isDark ? 'bg-[#212121] text-white' : 'bg-white text-gray-900'}
               `}
             value={name}
             onChange={e => setName(e.target.value)}
@@ -97,7 +97,7 @@ const FeedbackForm = ({ isDark }) => {
             type="email"
             placeholder="Email"
             className={`w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 mb-3
-              ${isDark ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}
+              ${isDark ? 'bg-[#212121] text-white' : 'bg-white text-gray-900'}
               `}
             value={email}
             onChange={e => setEmail(e.target.value)}
@@ -105,7 +105,7 @@ const FeedbackForm = ({ isDark }) => {
           />
           <select
             className={`w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400
-              ${isDark? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}
+              ${isDark? 'bg-[#212121] text-white' : 'bg-white text-gray-900'}
               `}
             value={category}
             onChange={e => setCategory(e.target.value)}
@@ -140,7 +140,7 @@ const FeedbackForm = ({ isDark }) => {
             type="text"
             placeholder="Mention a reasons for your rating"
             className={`w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400
-              ${isDark ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}
+              ${isDark ? 'bg-[#212121] text-white' : 'bg-white text-gray-900'}
               `}
             value={message}
             onChange={e => setMessage(e.target.value)}
