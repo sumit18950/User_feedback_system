@@ -60,11 +60,11 @@ const Dashboard = ({isDark}) => {
   const totalReviews = filteredFeedbacks.length;
 
   return (
-    <div className={`max-w-5xl mx-auto p-6 rounded-2xl shadow-lg flex flex-col md:flex-row gap-8
+    <div className={`max-w-5xl mx-auto p-2 sm:p-4 md:p-6 rounded-2xl shadow-lg flex flex-col md:flex-row gap-8
       ${isDark ? 'bg-[#111111] text-white' : 'bg-white text-gray-900'}
     `}>
       {/* Left: Overall rating and reviews */}
-      <div className="flex-1 min-w-[320px]">
+      <div className="flex-1 min-w-[0]">
         
         <div className="flex flex-col items-center mb-8">
           <span className={`text-5xl font-extrabold mb-2
@@ -97,8 +97,8 @@ const Dashboard = ({isDark}) => {
         </div>
         <div className="space-y-4 overflow-y-auto max-h-[200px] scrollbar-thin">
           {filteredFeedbacks.map(fb => (
-            <div key={fb._id} className={`bg-gray-50 rounded-lg p-4 border border-gray-200 shadow flex flex-col gap-2
-            ${isDark ? 'bg-[#222222] text-white' : 'bg-white text-gray-900'}
+            <div key={fb._id} className={`w-full max-w-md mx-auto bg-gray-50 rounded-lg border border-gray-200 shadow flex flex-col gap-2 px-3 py-3 sm:px-4 sm:py-4
+            ${isDark ? 'bg-[#222222] text-white border-gray-800' : 'bg-white text-gray-900 border-gray-200'}
             `}>
               <div className="flex items-center gap-2 mb-1">
                 <div className="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-400">
