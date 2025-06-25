@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Modern thin scrollbar styles for all scrollable areas */
+::-webkit-scrollbar, .scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  /* background: transparent; */
+}
+::-webkit-scrollbar-thumb, .scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #d1d5db; /* Tailwind gray-300 */
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover, .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa; /* Tailwind gray-400 */
+}
+
+html, .scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db transparent;
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Dark theme scrollbar and background */
+@media (prefers-color-scheme: dark) {
+  html, .scrollbar-thin {
+    /* background: #fafafa; */
+    color: #f3f4f6;
+    /* scrollbar-color: #a7a7a7 #ffffff; */
+  }
+  ::-webkit-scrollbar-thumb, .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #111111;
+  }
+  ::-webkit-scrollbar-thumb:hover, .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #222222;
+  }
+  ::-webkit-scrollbar, .scrollbar-thin::-webkit-scrollbar {
+    background: #222222;
+  }
+}
+
+.dark html, .dark .scrollbar-thin {
+  background: #222222;
+  color: #f3f4f6;
+  scrollbar-color: #111111 #222222;
+}
+.dark ::-webkit-scrollbar-thumb, .dark .scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #111111;
+}
+.dark ::-webkit-scrollbar-thumb:hover, .dark .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #222222;
+}
+.dark ::-webkit-scrollbar, .dark .scrollbar-thin::-webkit-scrollbar {
+  background: #222222;
+}
+  
