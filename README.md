@@ -104,6 +104,8 @@ MIT
 =======
 # User_feedback_system Screen shots 
 ![image](https://github.com/user-attachments/assets/b0c11da3-5827-459c-a5a5-9b57804a66d1)
-![image](https://github.com/user-attachments/assets/b0c11da3-5827-459c-a5a5-9b57804a66d1)
+![image](https://github.com/user-attachments/assets/49771f89-37eb-4792-b17a-aed48891a264)
+
+
 
 
