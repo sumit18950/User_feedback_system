@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Feedback Dashboard
 
 A modern full-stack feedback dashboard for collecting, displaying, and analyzing user feedback with light/dark mode support.
@@ -100,3 +101,6 @@ Feedback_dashboard/
 
 ## License
 MIT
+=======
+# User_feedback_system
+>>>>>>> e98d723b24bd5e502b3343d4b4dac0ed79dfa63f
